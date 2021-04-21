@@ -15,7 +15,7 @@ def print_options():
     print("1. Change case to UPPER CASE")
     print("2. Change case to lower case")
     print("3. Change case to AlTeRnAtInGcAsE")
-    print("4. Change case to Capitalised Case")
+    print("4. Change case to Title Case")
     print("5. Give the character count")
     print("6. Give the char. count of a certain letter")
     print("7. Give the number of unique characters")
