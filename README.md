@@ -1,4 +1,4 @@
-<h1>Text Case Changer</h1>
+# Text Case Changer
 
 Run on Replit.com - [case_changer - Replit](https://replit.com/@mightykillrr1/casechanger#case_changer.py)
 
@@ -14,3 +14,6 @@ You can change your text to following:
 - Get the character count
 - Get the character count of a given letter
 - Get the number of unique characters
+
+
+> *This project was made as a fun practice project during my Python learning course. I hope you guys like it. Do report any bugs or suggestions!*
