@@ -1,23 +1,25 @@
 # A very handy tool to change between lower case and upper case letters, or convert to mix case and transform your text.
 
-import pandas as pd
+from pandas import DataFrame
+from time import sleep
 
 print("Welcome user!")
 print("Accidentally left the caps lock on and typed something, but can't be bothered to start again and retype it all?")
 print("Well, simply enter your text and choose the case you want to convert to!")
+print(" ")
 
 
 def print_options():
     print(" ")
-    print(f"You've given the sentence: {sentence}")
+    print(f"You've given the sentence: \n{sentence}")
     print(" ")
     print("Please choose one of the following options: ")
     print("1. Change case to UPPER CASE")
     print("2. Change case to lower case")
-    print("3. Change case to AlTeRnAtInGcAsE")
+    print("3. Change case to Alternating Case(ExAmPlE)")
     print("4. Change case to Title Case")
     print("5. Give the character count")
-    print("6. Give the char. count of a certain letter")
+    print("6. Give the times a certain character was repeated")
     print("7. Give the number of unique characters")
     print(" ")
     print("8. Re-enter the sentence")
@@ -70,15 +72,15 @@ def unique_character_count(text):
 
 
 def restart_app():
-    resp = input("Do you want to continue? Say Yes or No: ").upper()
+    resp = input("Do you want to continue? ").upper()
     if resp in ['YES', 'Y']:
         return True
 
 
 def ask_save(rslt):
-    resp2 = input("Do you want to copy the results to your clipboard?: ").upper()
+    resp2 = input("Do you want to copy the results to your clipboard? ").upper()
     if resp2 in ['YES', 'Y']:
-        df = pd.DataFrame([rslt])
+        df = DataFrame([rslt])
         df.to_clipboard(index=False, header=False)
         print("Copied the result to your clipboard!")
 
@@ -134,4 +136,5 @@ while True:
         print("-----------------------")
         print("Thanks for using this app! Hit me up on Discord: mightykiller#9119")
         print("-----------------------")
+        sleep(4)
         break
